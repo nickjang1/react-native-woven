@@ -1,0 +1,41 @@
+PODS:
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - DCTAuth (3.0)
+  - Digits (2.5.0):
+    - TwitterCore (= 2.5.0)
+  - Fabric (1.6.11)
+  - Intercom (3.0.11)
+  - STTwitter (0.2.6)
+  - TwitterCore (2.5.0):
+    - Fabric
+
+DEPENDENCIES:
+  - Crashlytics
+  - DCTAuth (from `https://github.com/danielctull/DCTAuth.git`)
+  - Digits
+  - Fabric
+  - Intercom
+  - STTwitter (~> 0.2.6)
+
+EXTERNAL SOURCES:
+  DCTAuth:
+    :git: https://github.com/danielctull/DCTAuth.git
+
+CHECKOUT OPTIONS:
+  DCTAuth:
+    :commit: 0a8091a3fc165fb99a6f70cf15b3aed25252dad9
+    :git: https://github.com/danielctull/DCTAuth.git
+
+SPEC CHECKSUMS:
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  DCTAuth: 8add154decd00335d62917828896bba790ce47fd
+  Digits: c69ee2d1a6acf728c5d159f1bd335e4882bd3225
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
+  Intercom: b76e667c30cefc8377fd1ceb846ec31b5553ad91
+  STTwitter: 30ee2f79eff78c3d633a1edc869e97db9c9ead59
+  TwitterCore: 95c46af93112768a7983bd370d66023553601d01
+
+PODFILE CHECKSUM: 2234a03cb7d36a3d73f7bab5ba3f3030ba9df0f3
+
+COCOAPODS: 1.2.0

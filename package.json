@@ -1,0 +1,30 @@
+{
+  "name": "WovenReader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "flow": "^0.2.3",
+    "flow-bin": "0.32.0",
+    "halson": "^2.3.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.15.1",
+    "react": "^15.4.2",
+    "react-native": "^0.39.2",
+    "react-native-app-intro": "^1.1.5",
+    "react-native-autolink": "ferbass/react-native-autolink",
+    "react-native-code-push": "^1.16.1-beta",
+    "react-native-google-analytics-bridge": "^4.0.2",
+    "react-native-hyperlink": "0.0.6",
+    "react-native-invertible-scroll-view": "^1.0.0",
+    "react-native-lightbox": "^0.6.0",
+    "react-native-mail": "^2.0.1",
+    "react-native-oauth": "git+https://github.com/Kottidev/react-native-oauth.git",
+    "react-native-safari-view": "^1.2.0",
+    "react-native-share": "^1.0.19",
+    "react-native-user-defaults": "^0.1.4",
+    "react-native-video": "^0.9.0"
+  }
+}

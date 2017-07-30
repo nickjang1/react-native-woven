@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/DCTAuth" "$PODS_CONFIGURATION_BUILD_DIR/STTwitter" "${PODS_ROOT}/Crashlytics/iOS" "${PODS_ROOT}/Digits/iOS" "${PODS_ROOT}/Fabric/iOS" "${PODS_ROOT}/Intercom/Intercom" "${PODS_ROOT}/TwitterCore/iOS"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Crashlytics" "${PODS_ROOT}/Headers/Public/Digits" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/Intercom" "${PODS_ROOT}/Headers/Public/TwitterCore"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/DCTAuth/DCTAuth.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/STTwitter/STTwitter.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Crashlytics" -isystem "${PODS_ROOT}/Headers/Public/Digits" -isystem "${PODS_ROOT}/Headers/Public/Fabric" -isystem "${PODS_ROOT}/Headers/Public/Intercom" -isystem "${PODS_ROOT}/Headers/Public/TwitterCore"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"icucore" -l"xml2" -l"z" -framework "Accelerate" -framework "Accounts" -framework "AddressBook" -framework "AudioToolbox" -framework "CoreData" -framework "CoreGraphics" -framework "Crashlytics" -framework "DCTAuth" -framework "DigitsKit" -framework "Fabric" -framework "Foundation" -framework "ImageIO" -framework "Intercom" -framework "MobileCoreServices" -framework "Photos" -framework "QuartzCore" -framework "STTwitter" -framework "SafariServices" -framework "Security" -framework "Social" -framework "SystemConfiguration" -framework "TwitterCore" -framework "UIKit"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}/Pods

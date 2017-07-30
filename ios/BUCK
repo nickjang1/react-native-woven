@@ -1,0 +1,68 @@
+apple_resource(
+  name = 'WovenReaderResources',
+  files = glob(['*.png']),
+  dirs = [],
+)
+
+apple_bundle(
+  name = 'WovenReader',
+  binary = ':WovenReaderBinary',
+  extension = 'app',
+  info_plist = 'Info.plist',
+  tests = [':WovenReaderTests'],
+)
+
+apple_binary(
+  name = 'WovenReaderBinary',
+  deps = [':WovenReaderResources'],
+  preprocessor_flags = ['-fobjc-arc'],
+  compiler_flags = ['-Wno-objc-designated-initializers'],
+  headers = glob([
+    '*.h',
+  ]),
+  srcs = glob([
+    '*.m',
+  ]),
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+  ],
+)
+
+apple_package(
+  name = 'WovenReaderPackage',
+  bundle = ':WovenReader',
+)
+
+apple_test(
+  name = 'WovenReaderTests',
+  test_host_app = ':WovenReader',
+  srcs = ['WovenReaderTests/WovenReaderTests.m'],
+  info_plist = 'WovenReaderTests/Info.plist',
+  preprocessor_flags = ['-fobjc-arc'],
+  # headers = [
+  # '//../node_modules/react-native/React/*.h',
+  # ],
+  frameworks = [
+    '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+    '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+    '$PLATFORM_DIR/Developer/Library/Frameworks/XCTest.framework',
+  ],
+)
+
+# apple_test(
+#   name = 'MyTest',
+#   info_plist = 'MyTest-Info.plist',
+#   preprocessor_flags = ['-fobjc-arc'],
+#   srcs = [
+#     'MyTest.m',
+#   ],
+#   deps = [
+#     ':MyLibrary',
+#   ],
+#   frameworks = [
+#     '$SDKROOT/System/Library/Frameworks/Foundation.framework',
+#     '$SDKROOT/System/Library/Frameworks/UIKit.framework',
+#     '$PLATFORM_DIR/Developer/Library/Frameworks/XCTest.framework',
+#   ],
+# )

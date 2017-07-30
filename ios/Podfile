@@ -1,0 +1,11 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'WovenReader' do
+  pod 'STTwitter', '~> 0.2.6'
+  pod 'Intercom'
+  pod 'Fabric'
+  pod 'Digits'
+  pod 'Crashlytics'
+  pod 'DCTAuth', :git => 'https://github.com/danielctull/DCTAuth.git'
+end
